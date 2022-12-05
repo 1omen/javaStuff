@@ -27,7 +27,7 @@ public class Dog extends Animal implements TailInterface {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dog dog = (Dog) o;
-        return height == dog.height;
+        return height == dog.height && weight == dog.weight;
     }
 
     @Override

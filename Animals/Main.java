@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Hello world!");
         Dog aGod1 = new Dog(3, 3, "Larry");
         Dog aGod2 = new Dog(3, 3, "Lola");
-
+        System.out.println(aGod2.equals(aGod1));
 
         Animal exAnimal = new Dog(60,34,"Larry") {
             @Override

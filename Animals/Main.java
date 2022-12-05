@@ -8,9 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        Dog sharik = new Dog(3, 3, "Larry");
-        new Dog(3, 9, "Lola");
-        feed(sharik);
+        Dog aGod1 = new Dog(3, 3, "Larry");
+        Dog aGod2 = new Dog(3, 3, "Lola");
+
 
         Animal exAnimal = new Dog(60,34,"Larry") {
             @Override

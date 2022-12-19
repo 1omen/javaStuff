@@ -17,10 +17,10 @@ public class Nickname extends Text {
         return textContent;
     }
 
-    boolean spaceDone = false; // если сделан, то криво работает register метод
-    boolean sidingsDone = false;
-    boolean registerDone = false;
-    int sidingsLength = 2; // в планах зада
+    private boolean spaceDone = false; // если сделан, то криво работает register метод
+    private boolean sidingsDone = false;
+    private boolean registerDone = false;
+    private int sidingsLength = 2; // в планах зада
 
     public void setStyle(Style type) {
         if (textContent != null) {

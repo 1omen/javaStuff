@@ -5,7 +5,8 @@ public class Article extends Text {
         this.defaultTextContent = text;
     }
 
-    private int maxLength;
+    private String title;
+    private int maxLength = 5;
 
     public void setTitle(String Title) {
         this.title = Title;
@@ -21,24 +22,26 @@ public class Article extends Text {
         if (title != null) {
             System.out.println("");
             System.out.println(Bold + title + None);
-            System.out.println("");
-            String[] arr = textContent.split(" ");
-            String ss = bgColor + textColor + "";
-            int a = 0;
-            int i = 0;
-            while (i < arr.length) {
-                if (a < maxLength) {
-                    ss += arr[i] + " ";
-                } else {
-                    System.out.println(ss + None);
-                    ss = bgColor + textColor + "" + arr[i] + " ";
-                    a = 0;
-                }
-                a++;
-                i++;
-            }
-            System.out.println(ss + None);
-            System.out.println("");
         }
+
+        System.out.println("");
+        String[] arr = textContent.split(" ");
+        String ss = bgColor + textColor + "";
+        int a = 0;
+        int i = 0;
+        while (i < arr.length) {
+            if (a < maxLength) {
+                ss += arr[i] + " ";
+            } else {
+                System.out.println(ss + None);
+                ss = bgColor + textColor + "" + arr[i] + " ";
+                a = 0;
+            }
+            a++;
+            i++;
+        }
+        System.out.println(ss + None);
+        System.out.println("");
+
     }
 }

@@ -1,7 +1,6 @@
 public abstract class Text implements Print {
     protected String textContent;
     protected String defaultTextContent;
-    protected String title;
     protected String textColor = None;
     protected String bgColor = None;
 
